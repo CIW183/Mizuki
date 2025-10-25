@@ -44,7 +44,7 @@ export const siteConfig: SiteConfig = {
 	// 顶栏标题配置
 	navbarTitle: {
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "路坻",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
 		icon: "assets/home/home.png",
 	},
@@ -71,24 +71,19 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/d1.webp",
-				"/assets/desktop-banner/d2.webp",
-				"/assets/desktop-banner/d3.webp",
-				"/assets/desktop-banner/d4.webp",
-				"/assets/desktop-banner/d5.webp",
-				"/assets/desktop-banner/d6.webp",
-				"/assets/desktop-banner/d7.webp",
-				"/assets/desktop-banner/d8.webp",
+				"/assets/desktop-banner/d1.png",
+				"/assets/desktop-banner/d2.png",
+				"/assets/desktop-banner/d3.png",
+				"/assets/desktop-banner/d4.png",
+				"/assets/desktop-banner/d5.png",
+				"/assets/desktop-banner/d6.png",
+				"/assets/desktop-banner/d7.png",
+				"/assets/desktop-banner/d8.png",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/m1.webp",
-				"/assets/mobile-banner/m2.webp",
-				"/assets/mobile-banner/m3.webp",
-				"/assets/mobile-banner/m4.webp",
-				"/assets/mobile-banner/m5.webp",
-				"/assets/mobile-banner/m6.webp",
-				"/assets/mobile-banner/m7.webp",
-				"/assets/mobile-banner/m8.webp",
+				"/assets/mobile-banner/m1.png",
+				"/assets/mobile-banner/m2.png",
+				"/assets/mobile-banner/m3.png",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -97,7 +92,7 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
-			interval: 1.5, // 轮播间隔时间（秒）
+			interval: 5, // 轮播间隔时间（秒）
 		},
 
 		waves: {
@@ -117,10 +112,10 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Beautiful Mizuki!", // 主页横幅主标题
+			title: "Hello 路坻!", // 主页横幅主标题
 
 			subtitle: [
-				"A Showcase Demo Site",
+				"Hello 路坻!",
 				"Carousel Highlight: Innovation",
 				"Carousel Focus: User Experience",
 				"Carousel Spot: Core Advantages",
@@ -280,8 +275,8 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Matsuzaka Yuki",
+	avatar: "assets/images/avatar1.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "路坻",
 	bio: "The world is big, you have to go and see",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
@@ -502,7 +497,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: true, // 启用看板娘
+	enable: false, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度
